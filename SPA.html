@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/Icon/favicon2.png">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="CSS/utilities.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>My Journal</title>
+    <style media="screen"></style>
+  </head>
+  <body>
+
+    <!-- Load content animation -->
+    <div class="load-wrapper">
+      <div class="load-circle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container flex">
+        <div class="logo-icon">
+          <h2 class="md">Webbble</h2>
+        </div>
+        <div class="nav-links">
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="flex">
+            <li><a href="#home" class="lead">Home</a></li>
+            <li><a href="#hobby" class="lead">Hobby</a></li>
+            <li><a href="#journal" class="lead">Journal</a></li>
+            <li><a href="#gallery" class="lead">Gallery</a></li>
+            <li><i class='bx bx-moon bx-sm change-theme' id="icon-theme"></i></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section id="home" class="showcase py-5">
+      <div class="container grid">
+        <div class="content-text">
+          <h1 class="xl">Good Morning!</h1>
+          <h4 class="md">did you have a fun day?</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+          </p>
+          <button onclick="toggleProfile()" type="button" name="button" class="btn btn-primary my-2">See More</button>
+        </div>
+        <div class="content-illustration">
+          <img src="IMG/Learning.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobby -->
+    <section id="hobby" class="hobby py-5">
+      <div class="container">
+        <div class="title-text text-center">
+          <h1 class="title">My <span class="t-solidg">hobbies?</span></h1>
+        </div>
+        <div class="images">
+
+          <div class="image-1 grid">
+            <div class="image-rounded intro-popup flex">
+              <img src="IMG/Hobby/readbook.jpg" alt="">
+            </div>
+            <div class="content-text intro-text">
+              <h2 class="md">Read the book</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-2 grid">
+            <div class="image-rounded intro-popup flex">
+              <img src="IMG/Hobby/journal.jpg" alt="">
+            </div>
+            <div class="content-text intro-text">
+              <h2 class="md">Journal</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-3 grid">
+            <div class="image-rounded intro-popup flex">
+              <img src="IMG/Hobby/adventureTime.jpg" alt="">
+            </div>
+            <div class="content-text intro-text">
+              <h2 class="md">Adventure</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal" class="journal py-5">
+      <div class="container title-text text-center">
+        <h1 class="title">My <span class="t-solidg">Journal</span></h1>
+      </div>
+      <div class="container content-cards">
+
+      </div>
+    </section>
+
+    <!-- Gallery Images -->
+    <section id="gallery" class="gallery py-5">
+      <div class="container title-text text-center">
+        <h1 class="title">My <span class="t-solidg">Gallery</span></h1>
+      </div>
+      <div class="container grid grid-4 frame-image">
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark-green py-5">
+      <div class="container grid grid-3">
+        <div class="company">
+          <h1>Webbble</h1>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="https://www.google.com/maps/place/Jakarta,+Daerah+Khusus+Ibukota+Jakarta" target="_blank">Jakarta, Indonesia</a></li>
+            <li><a href="tel:123-456-7890" target="_blank">081xxxxxxx</a></li>
+            <li><a href="mailto:rasyadloebisa@gmail.com" target="_blank">rasyadloebisa@gmail.com</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" target="_blank"><i class='bx bxl-instagram bx-md' ></i></i></a>
+          <a href="#" target="_blank"><i class='bx bxl-twitter bx-md' ></i></i></a>
+          <a href="https://www.youtube.com" target="_blank"><i class='bx bxl-facebook-circle bx-md'></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Blur -->
+    <div class="blur">
+
+    </div>
+
+    <!-- Profile card -->
+    <div class="profile-card">
+      <div class="image-profile flex" onclick="toggleProfile()">
+        <img src="IMG/Profile/Profile.jpg" alt="">
+      </div>
+      <div class="content-profile">
+        <span class="lead">17 May 2005</span>
+        <h1 class="md">Someone famous</h1>
+        <p>
+          About me Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="closeIcon" onclick="toggleProfile()"><i class='bx bx-x-circle bx-md'></i></div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup popup-relative">
+      <div class="group flex">
+
+        <div class="content-text">
+          <h1 class="lg"></h1>
+          <p class="lead">
+
+          </p>
+        </div>
+
+        <button type="button" name="button" class="btn btn-primary" onclick="toggle()">Close</button>
+
+      </div>
+
+    </div>
+
+    <!-- Popup Image-->
+    <div class="popup-image flex">
+
+    </div>
+
+    <!-- === JavaScript File === -->
+    <!-- JavaScript Library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <!-- JavaScript Code -->
+    <script src="JS/contents.js" charset="utf-8"></script>
+    <script src="JS/interactive.js" charset="utf-8"></script>
+
+  </body>
+</html>

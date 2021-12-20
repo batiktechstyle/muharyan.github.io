@@ -1,0 +1,257 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Lato', sans-serif;
+  color: var(--text-dark-color);
+  background-color: var(--text-light-color);
+  line-height: 1.6;
+}
+
+body.darkTheme
+{
+
+  /* change CSS Variable */
+  /* change theme */
+  --text-light-color: #333;
+  --text-dark-color: #fff;
+
+  --shadow-light-theme: rgba(0, 0, 0, .17);
+  --shadow-dark-theme: rgba(255, 255, 255, .27);
+  --shadow-weight-dark-theme: rgba(255, 255, 255, .78);
+
+  --hover-light-theme: rgba(0, 0, 0, .27);
+  --hover-dark-theme: rgba(255, 255, 255, .78);
+
+  /* CSS */
+  color: var(--text-dark-color);
+  background-color: var(--text-light-color);
+}
+
+
+/* CSS Variable */
+:root
+{
+  --primary-color: #069C54;
+  --dark-green: #046638;
+  --solid-green: #09E87C;
+  /*new*/
+  --secondary-color: #02B38F;
+
+  /* change theme */
+  --text-light-color: #fff;
+  --text-dark-color: #333;
+
+  --shadow-light-theme: rgba(255, 255, 255, .27);
+  --shadow-dark-theme: rgba(0, 0, 0, .17);
+  --shadow-weight-dark-theme: rgba(0, 0, 0, .5);
+
+  --hover-light-theme: rgba(255, 255, 255, .78);
+  --hover-dark-theme: rgba(0, 0, 0, .27);
+}
+
+
+/* Layout */
+.container
+{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 100%;
+}
+
+.flex
+{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grid
+{
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.grid-3 { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
+.grid-4 { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
+
+
+/* Tag Text and Image */
+p
+{
+  margin: 10px 0;
+}
+a
+{
+  text-decoration: none;
+}
+a:link, a:visited
+{
+  color: var(--text-dark-color);
+}
+img
+{
+  width: 100%;
+}
+ul
+{
+  list-style: none;
+}
+
+
+/* Icons */
+.icon
+{
+  display: inline-block;
+  margin-right: 10px;
+  width: 1rem;
+}
+
+
+/* Fonts and Texts*/
+.text-center { text-align: center; }
+
+.lead { font-size: 20px; }
+.sm { font-size: 1rem; }
+.md { font-size: 2rem; }
+.title { font-size: 2.3rem; }
+.lg { font-size: 3rem; }
+.xl { font-size: 4rem; }
+
+.t-primary
+{
+  color: var(--primary-color);
+}
+.t-secondary
+{
+  color: var(--secondary-color);
+}
+.t-darkg
+{
+  color: var(--dark-green);
+}
+.t-solidg
+{
+  color: var(--solid-green);
+}
+
+
+
+/* Margin and Padding */
+.title-text { margin-bottom: 4rem; }
+
+.my-1 { margin: 1rem 0; }
+.my-2 { margin: 1.5rem 0; }
+.my-3 { margin: 2rem 0; }
+.my-4 { margin: 3rem 0; }
+.my-5 { margin: 4rem 0; }
+
+.m-1 { margin: 1rem; }
+.m-2 { margin: 1.5rem; }
+.m-3 { margin: 2rem; }
+.m-4 { margin: 3rem; }
+.m-5 { margin: 4rem; }
+
+.py-1 { padding: 1rem 0; }
+.py-2 { padding: 1.5rem 0; }
+.py-3 { padding: 2rem 0; }
+.py-4 { padding: 3rem 0; }
+.py-5 { padding: 4rem 0; }
+
+.p-1 { padding: 1rem; }
+.p-2 { padding: 1.5rem; }
+.p-3 { padding: 2rem; }
+.p-4 { padding: 3rem; }
+.p-5 { padding: 4rem; }
+
+
+/* Background and Buttons Color */
+.bg-primary
+{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.bg-secondary
+{
+  background-color: var(--secondary-color);
+  color: #333;
+}
+.bg-dark-green
+{
+  background-color: var(--dark-green);
+  color: #fff;
+}
+.bg-solid-green
+{
+  background-color: var(--solid-green);
+  color: #333;
+}
+
+.bg-primary a
+{
+  color: #fff;
+}
+.bg-secondary a
+{
+  color: #333;
+}
+.bg-dark-green a
+{
+  color: #fff;
+}
+.bg-solid-green a
+{
+  color: #333;
+}
+
+
+.btn-primary, .btn-primary a
+{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.btn-oprimary, .btn-oprimary a
+{
+  color: var(--primary-color);
+}
+
+
+
+/* Badge Color */
+.badge
+{
+  display: inline-block;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
